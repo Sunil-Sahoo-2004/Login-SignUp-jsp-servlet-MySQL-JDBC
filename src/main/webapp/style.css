@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+body {
+	align-items: flex-end;
+	justify-content: center;
+	background: linear-gradient(135deg, #AEFD6C 0%, #00A86B 100%);
+	background-image: url('background.png');
+	background-size: 48rem 100%;
+	background-position: center left;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.container {
+	width: 44.2rem;
+	height: 100%;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    font-size: 2.2rem; 
+    letter-spacing: 1px; 
+    margin-bottom: 55px;
+}
+
+/* Container for the form */
+.form-group {
+    display: flex;
+    align-items: right;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+/* Labels */
+label {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600; 
+    transition: color 0.3s ease;
+    text-align: right;
+    margin-right: 20px;
+    
+}
+
+label:hover {
+    color: #007BFF;
+}
+
+/* Inputs */
+input {
+	width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+#email {
+	position: relative;
+	left: 16px;
+}
+
+/* Buttons */
+button {
+    width: 55%;
+    padding: 14px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-shadow: 0 1px 5px rgba(0, 123, 255, 0.5);
+}
